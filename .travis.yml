@@ -4,14 +4,13 @@
 language: python
 
 env:
-  - TOXENV=py26
   - TOXENV=py27
-  - TOXENV=py33
   - TOXENV=py34
+  - TOXENV=py35
 
-install: pip install tox
+install: pip install nose
 
-script: tox
+script: nosetests
 
 notifications:
   email: false
